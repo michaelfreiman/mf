@@ -1,1 +1,49 @@
-<h1>Hello Git</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css"
+</head>
+<body>
+		<div class="flip">
+			<div class="card">
+				<div class="face front">
+					<div class="mf-tb container row">
+						<div class="mf-tbcell panel panel-default">
+							<h1>Hello, Big Red!</h1>
+							<a href="#" class="flipcard">
+								<i class="glyphicon glyphicon-cog"></i>
+								Front
+							</a>
+						</div>
+					</div>							
+				</div>
+				<div class="face back">
+					<div class="mf-tb container row">
+						<div class="mf-tbcell panel panel-default">
+							<h1>Back, Big Red!</h1>
+							<a href="#" class="flipcard">
+								<i class="glyphicon glyphicon-cog"></i>
+								Back					
+							</a>
+						</div>
+					</div>							
+				</div>
+			</div>
+		</div>
+
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script>
+		$('.flipcard').click(function(){
+			$('.flip').find('.card').toggleClass('flipped');
+		});
+	</script>
+</body>
+</html>
