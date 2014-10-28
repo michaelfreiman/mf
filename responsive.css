@@ -1,0 +1,36 @@
+
+/* --------------------------------------------
+  TABLET IN LANDSCAPE
+-------------------------------------------- */	
+	@media (max-width: 1024px) {	  
+		.container {width: 768px;}
+	} 
+/* --------------------------------------------
+  TABLET IN PORTRAIT
+------------------------------------------- */
+	@media (max-width: 768px) {
+		.container {width: 600px;}
+		p {font-size: 26px;}
+		section h1 {font-size: 36px;}
+		
+	} 
+/* --------------------------------------------
+  MOBILE 600px
+-------------------------------------------- */
+        @media (max-width: 600px) {
+  		.container {width: 402px;}
+		p {font-size: 22px;}
+		section h1 {font-size: 32px;}
+		header h3 {display: none;}
+
+        }
+/* --------------------------------------------
+  MOBILE 400px
+-------------------------------------------- */
+        @media (max-width: 400px) {	  
+		.container {width: 300px;}
+		p {font-size: 20px;}
+		section h1 {font-size: 24px;}
+
+
+        }
