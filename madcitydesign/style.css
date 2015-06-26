@@ -1,0 +1,175 @@
+/* --------------------------------------------
+   HTML5 DOCTOR RESET
+-------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+input, select { vertical-align: middle; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+/* --------------------------------------------
+   FONTS
+-------------------------------------------- */
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'LinuxLibertineORegular';
+    src: url('fonts/linlibertine_re-4.7.5ro-webfont.eot');
+    src: url('fonts/linlibertine_re-4.7.5ro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/linlibertine_re-4.7.5ro-webfont.woff') format('woff'),
+         url('fonts/linlibertine_re-4.7.5ro-webfont.ttf') format('truetype'),
+         url('fonts/linlibertine_re-4.7.5ro-webfont.svg#LinuxLibertineORegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'NymphetteRegular';
+    src: url('fonts/Nymphette-webfont.eot');
+    src: url('fonts/Nymphette-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Nymphette-webfont.woff') format('woff'),
+         url('fonts/Nymphette-webfont.ttf') format('truetype'),
+         url('fonts/Nymphette-webfont.svg#NymphetteRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* --------------------------------------------
+   GENERAL
+-------------------------------------------- */
+body {background: #f3eeea url(images/dot.png) repeat; font-family: Arial, sans-serif;}
+.clear {clear: both;}
+.container {width: 1200px; margin: 0 auto;}
+
+/* --------------------------------------------
+   NAV
+-------------------------------------------- */
+nav {height: 30px; line-height: 30px; overflow: hidden;}
+  nav h2 {display: block; font-size: 14px; color: #bebeb5; float: left; font-family: 'BebasNeueRegular', Arial, sans-serif; letter-spacing: 0.2em;}
+    nav ul {float: right;}
+      nav ul li { float: left; list-style: none; margin-left: 5px;}
+        nav ul li a {border-right: solid 1px #8a907e; border-left: solid 1px #8a907e; color: #565a4e; display: block; font-size: 16px; font-weight: normal; font-family: 'BebasNeueRegular', Arial, sans-serif; letter-spacing: 0.2em; padding: 0 15px; text-align: center; text-decoration: none; text-transform: uppercase;}
+        nav ul li a:hover {background: #a2c8c9; color: #f8fbfb;}
+        nav ul li a.active {background: #3c3f36; color: #c4c7be;}
+        nav ul li a.active:hover {color: #a2c8c9;}
+
+/* --------------------------------------------
+   #NAV FOR MOBILE ONLY
+-------------------------------------------- */
+
+/* --------------------------------------------
+   HEADER
+-------------------------------------------- */
+
+header{ height: 175px;}
+.bar { height: 40px; line-height: 42px; background: #3c3f36; border-bottom: 1px solid #10110f; margin: 0 0 35px 0;}
+  .bar h1 {color: #cccfc7; font-family: 'BebasNeueRegular', Arial, sans-serif; font-size: 18px; font-weight: normal; letter-spacing: 0.2em; text-align: center;}
+    .infi { font-family: Georgia, sans-serif; }
+      .right { margin-right: 10px; }
+      .left {margin-left: 10px;}
+#circle {position: relative; width: 85px; height: 85px; background: #a2c8c9; border: 4px solid #cde1e2; -moz-border-radius: 45px; -webkit-border-radius: 45px; border-radius: 45px; -ms-border-radius: 45px; line-height: 90px; color: #f8fbfb; margin: 0 auto; text-align: center;}
+  #circle h1 {text-align: center; font-family: 'BebasNeueRegular', Arial, sans-serif; font-size: 35px;}
+  .lefte {left: -90px; position: absolute; font-family: 'NymphetteRegular'; font-size: 55px; color: #cccfc7;}
+  .righte {right: -90px; position: absolute; font-family: 'NymphetteRegular'; font-size: 55px; color: #cccfc7;}
+  
+
+/* --------------------------------------------
+   BANNER
+-------------------------------------------- */
+#banner {border-top: 5px double #cde1e2; border-bottom: 5px double #cde1e2; margin: 30px 0 0 0;}
+  #banner section {background: #a2c8c9 url(images/fabric.png) repeat; margin: 12px 0 15px 0; height: 180px; line-height: 195px; }
+    #banner h1 {font-weight: normal; text-align: center; font-size: 145px; color: #e2eeee; font-family: 'BebasNeueRegular', Arial, sans-serif; text-transform: uppercase; text-shadow: 0 2px 0 #f8fbfb, 0 -1px 0 #416e6f;}
+      #banner h1 span {color: #f8fbfb;}
+/* --------------------------------------------
+   GALLERY
+-------------------------------------------- */
+.photoswipegallery {margin: 55px 0;}
+.gallery { list-style: none; padding: 0; margin: 0; overflow: hidden;}
+  .gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+    .gallery li a { display: block; margin: 5px; text-decoration: none; color: #f3eeea; text-align: center; font-family: 'BebasNeueRegular', Arial, sans-serif; font-size: 24px; font-weight: normal; letter-spacing: 0.2em; }
+      .gallery li a:hover {color: #a2c8c9;}
+      .gallery li img { display: block; width: 100%; height: auto;}
+  .container ul.gallery {float: left; width: 33.33333333%; position: relative;}
+/* --------------------------------------------
+   GALLERY CAPTIONS
+-------------------------------------------- */
+h2.caption{background: rgba(8, 8, 7, 0.75); padding: 10px 0; position: relative; margin-top: -55px;}
+    h2.caption:before, h2.caption:after {content: ""; background: rgba(8, 8, 8, 0.75); position: absolute; top: 30px; bottom: 30px; width: 500px;}
+    h2.caption:before {right: 100%;}
+    h2.caption:after {left: 100%;}
+/* --------------------------------------------
+   VIDEO
+-------------------------------------------- */
+.video-gallery {margin: 55px 0;}
+.video {width: 640px; height: 390px; margin: 0 auto;}
+/* --------------------------------------------
+   INFO SECTION
+-------------------------------------------- */
+#info {padding: 15px 0 30px 0; background: #a2c8c9 url(images/fabric.png) repeat; border-top: 5px double #b7d5d5; border-bottom: 5px double #b7d5d5;}
+#info .container {width: 750px; position: relative;}
+#info h4 {font-family: 'BebasNeueRegular', Arial, sans-serif; font-size: 22px; letter-spacing: 0.05em; color: #d8e8e8; }
+#info p {font-size: 16px; font-family: Georgia, sans-serif; color: #f8fbfb; padding-top: 15px;}
+
+/* --------------------------------------------
+   FOOTER
+-------------------------------------------- */
+footer {background: #22241e; margin: 25px 0 0 0; padding: 30px 0;}
+  footer section {border-top: 3px double #33362e; margin: 20px 0 0 0;}
+  footer h2 {color: #5f6455; text-align: center; font-family: 'BebasNeueRegular', Arial, sans-serif; font-size: 32px; font-weight: normal; letter-spacing: 0.05em;}
+   footer h2 span {color: #33362e;}
+    .designers {background: #080807; width: 24%; height: 300px; float: left; margin: 45px 0 0 0; border: 1px solid #33362e;}
+    .designers ul li { list-style: none;}
+    .designers ul li a { color: #5F6455; font-family: 'BebasNeueRegular', Arial, sans-serif;}
+    .designers ul li a:hover {color: }

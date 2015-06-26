@@ -1,0 +1,39 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html, body {height: 100%;}
+body {font-family: 'Open Sans', sans-serif; font-size: 100%; font-weight: 400; background: #fff;}
+h1, nav a {font-weight: 400;}
+h2, .img-container {font-weight: 600;}
+.clear {clear: both;}
+.container {width: 92%; margin: 0 auto;}
+.robot-container {width: 70%;margin: 0 auto; border: 2px solid #fff; color: #a8a5a0; font-size: 0.9em;}
+.robot-container:hover {border: 2px solid #6f826f; color: #293029;}
+.robot-container h4 {text-align: center; margin: 0.75% 0; text-transform: uppercase; font-weight: 400;}
+a {text-decoration:none; outline: none;}
+figure {width: 100%; height: auto; margin: 0 auto;}
+figcaption {font-size: 0.8em; color: #767676; line-height: 1.2em; font-style: italic; text-align: center;}
+img {width: 100%; height: auto;}
+section span {color: red;}
+/**PAGE**/
+header {padding: 2.25% 0; width: 55%; max-width: 300px; margin: 0 auto;}
+nav {float: right; display: block; padding: 0.55em; background: #fafafa; border: 1px solid #f2f2f2;}
+nav a {position: relative; padding-right: 1.25em; font-size: 1em; color: #029daf;}
+nav a:after {content: ""; position: absolute; top: 0.275em; right: 0; width: 1.25em; height: 0.125em;border-top: 0.375em double #c3c3c3; border-bottom: 0.125em solid #c3c3c3;}
+nav a:hover {color: #01616c;}
+nav a:hover::after {border-top: 0.375em double #ccc; border-bottom: 0.125em solid #ccc;}
+/**PAGE ARTICLE**/
+section {width: 75%; max-width: 615px; margin: 0 auto; font-size: 1.012em; line-height: 1.4em; color: #383633;}
+section figure {padding: 4% 0;}
+section p {margin: 2% 0;}
+section h2 {padding-top: 5%;}
+#robot a{color: #b8b6b2;}
+#robot a:hover{color: #494744;}
+#robot p{}
+#robot p span{color: #b8b6b2;}
+#site-description {padding: 2% 0; background: #f5feff; border-top: 1px solid #b2f6fe;}
+#site-description h3 {text-align: center; font-size: 0.9em; color: #029daf; font-weight: 400;}
+.lead {font-size: 1.1em; line-height: 1.485em;}
+#navigation {background: #f9f9f9; position: relative; display: none; padding: 0.9em 25%;}
+    #navigation p {display: none; float: left; width: 47.5%; padding: 0.9em 0; text-transform: uppercase; color: #87847d; font-size: 1.0em;}
+    #navigation p span {color: #5b5954; font-weight: 600;}
+    #navigation a { margin: 0.5em 0; padding: 0.9em 0; text-align: center; display: block; background: #f1f0f0; text-decoration: none; text-transform: uppercase; color: #a8a5a0; font-weight: 400; font-size: 0.8em;}
+    #navigation a:hover, #navigation a.active {background: #b8b6b2; color: #fafafa;}

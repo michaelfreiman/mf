@@ -1,0 +1,30 @@
+/* --------------------------------------------
+  small
+-------------------------------------------- */
+        @media (min-width: 768px) {
+	section {font-size: 1.02em; width: 65%;}
+	#navigation a {float: left; width: 30%; margin: 0.25em 0.25em;}
+	#site-description h3 {font-size: 1.0em;}
+        }
+/* --------------------------------------------
+  medium
+-------------------------------------------- */
+        @media (min-width: 992px) {
+	section {font-size: 1.07em; width: 57%;}
+	nav {display: none;}
+        .robot-container {width: 49%; float: left; margin: 0;}
+	#navigation {display: block !important; padding: 0.5em 0;}
+	#navigation a {float: left; width: 15%; margin: 0.25em 0.25em; padding: 0.9em 0;}
+        #navigation p {display: block;}
+	#site-description h3 {font-size: 1.15em;}
+        }
+	
+	/* --------------------------------------------
+ large
+-------------------------------------------- */
+        @media (min-width: 1200px) {
+        .robot-container {width: 32.3333333%;}
+	section {font-size: 1.10em; width: 50%; }
+            #navigation p {display: block;}
+	#site-description h3 {font-size: 1.3em;}
+        }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tin Bones | Robots</title>
+	<link REL="SHORTCUT ICON" HREF="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
+	<link href="normalize.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="responsive.css" rel="stylesheet">
+</head>
+<body>
+		<nav>
+			<a href="#"></a>
+		</nav>
+		<div class="clear"></div>
+	<div id="navigation">
+		<div class="container">
+			<p><span>Tin bones</span> robot empire</p>
+			<a href="index.html" class="active">Robots</a>
+			<a href="laboratory.html">Laboratory</a>
+			<a href="history.html">History</a>
+			<div class="clear"></div>
+		</div><!--container-->
+	</div><!--navigation-->
+	<div class="container">
+	<header>
+		<img src="images/logo.jpg"/>
+
+	</header>
+	</div><!--container-->
+		<div class="container">
+			<a href="robot.html"><div class="robot-container">
+				<img src="images/robot1.jpg"/>
+				<h4>The robot name</h4>
+			</div></a>
+			<a href="robot2.html"><div class="robot-container">
+				<img src="images/robot2.jpg"/>
+				<h4>The robot name</h4>
+			</div></a>
+			<a href="robot3.html"><div class="robot-container">
+				<img src="images/robot3.jpg"/>
+				<h4>The robot name</h4>
+			</div></a>
+	<div class="clear"></div>		
+	</div><!--container-->
+	
+	
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(function(){
+    $('nav a').click(function() {
+        $('#navigation').slideToggle('fast');
+        });
+});
+</script>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</body>
+</html>
