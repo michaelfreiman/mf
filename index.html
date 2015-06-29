@@ -1,150 +1,28 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Michael Freiman</title>
-	<link REL="SHORTCUT ICON" HREF="favicon.ico">
-	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" name="viewport" />
-	<link href='http://fonts.googleapis.com/css?family=Roboto:300,500' rel='stylesheet' type='text/css'>
-	<link href="reset.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-	<link href="responsive.css" rel="stylesheet">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-</head>
-<body>
-<div id="stripe"></div>
-<header>
-<div class="container">
-	<h3>Page 1/5</h3>
-	<nav>
-		<a href="#" rel="Page 1/5" class="active pageone">1</a>
-		<a href="#" rel="Page 2/5" class="pagetwo">2</a>
-		<a href="#" rel="Page 3/5" class="pagethree">3</a>
-		<a href="#" rel="Page 4/5" class="pagefour">4</a>
-		<a href="#" rel="Page 5/5" class="pagefive">5</a>
-	</nav>
-<div class="clear"></div>
-</div><!--container-->
-</header>
-<div class="content one">
-	<div class="container">
-	<section class="valign">
-		<h1>Michael Freiman</h1>
-		<p>I am an artist, designer, educator and web developer.</p>
-		<div class="clear"></div>
-	</section>
-
-	</div>
-</div>
-<div class="content two">
-	<div class="container">
-		<section class="valign">
-			<h1>art</h1>
-			<p>In 2008, I received an MFA in studio arts from Maine College of Art in Portland, ME. My thesis argument states nothingness is a poetic space of potentiality. </p>
-			<p><a href="#" class="show_hide right">selected work &raquo;</a></p>
-			<div class="clear"></div>
-		</section>
-
-	</div><!--container-->
-</div>
-<div class="slidingDiv">
-<section class="tenth valign center">
-<a href="#" class="bigger show_hide">&otimes;</a>
-</section>
-<section class="ninetieth valign">
-<div class="container">
-<div class="cycle-slideshow"
-    data-cycle-fx="scrollHorz"
-    data-cycle-speed="200"
-    data-cycle-center-horz=true
-    data-cycle-swipe=true
-    >
-<img src="images/thepastisstillthepresent.jpg">
-<img src="images/appropriable.jpg">
-<img src="images/beaten.jpg">
-<img src="images/911.jpg">
-<img src="images/lovely.jpg">
-<img src="images/indebted.jpg">
-<img src="images/eloieloi.jpg">
-<img src="images/formation.jpg">
-<img src="images/mfashow.jpg">
-<img src="images/balloon.jpg">
-<img src="images/wrapper.jpg">
-</div><!--cycke-slideshow-->
-</div><!--container-->
-</section>
-<div class="clear"></div>
-</div><!--slidingDiv-->
-<div class="content three">
-	<div class="container">
-		<section class="valign">
-
-			<h1>design</h1>
-			<p>The creative process moves freely, always in a new direction to a new space where new ideas emerge. In essence, this process is rhizomic. </p>
-			<p><a href="https://www.behance.net/michaelfreiman" class="right">selected work &raquo;</a></p>
-		<div class="clear"></div>
-		</section>
-	</div><!--container-->
-</div>
-<div class="content four">
-	<div class="container">
-		<section class="valign">
-			<h1>teaching</h1>
-			<p>My pedagogical practice looks at the creative process as a model for building a creative, collaborative learning environment. </p>
-			<p><a href="http://video.wpt.org/video/2365122584/" target="_blank" class="right">televised lecture &raquo;</a></p>
-			<div class="clear"></div>
-		</section>
-	</div><!--container-->
-</div>
-<div class="content five">
-	<div class="container">
-		<section class="valign">
-			<h1>code</h1>
-			<p>In 2003, my love for web design began with hacking the HTML and CSS of my blogger website. Today, I develop websites with the following: HTML5, CSS3, jQuery, PHP, Yii, Drupal, Wordpress, MYSQL, Apache and Ubuntu Servers.</p>
-		</section>
-	</div><!--container-->
-</div>
-<div class="clear"></div>
-
-<script>$(window).resize(function() {$('.content, .slidingDiv').height($(window).height());});$(window).trigger('resize');</script>
-<script>
-$(function(){
-    $('nav a').click(function(){
-	var index = $('nav a').index(this);
-        var tagline = $(this).attr("rel");
-	    $('.content').animate({"marginLeft" : -index*100 + "%"}, 300);
-	    $('nav a').removeClass('active');
-	    $(this).addClass('active');
-            $('header h3').html(tagline);
-            return false;
-    });
-});
-</script>
-<script>
-$(function(){
-	var stripe = $('#stripe')
-	$('a.pageone').click(function(){
-		$(stripe).delay(300).animate({"backgroundColor" : "#d8d8d8"}), 300;
-	});
-	$('a.pagetwo').click(function(){
-		$(stripe).delay(300).animate({"backgroundColor" : "#ff5146"}), 300;
-	});
-	$('a.pagethree').click(function(){
-		$(stripe).delay(300).animate({"backgroundColor" : "#44c4ff"}), 300;
-	});
-	$('a.pagefour').click(function(){
-		$(stripe).delay(300).animate({"backgroundColor" : "#88b87c"}), 300;
-	});
-	$('a.pagefive').click(function(){
-		$(stripe).delay(300).animate({"backgroundColor" : "#9359f0"}), 300;
-	});
-});
-</script>
-<script src="flyout.js"></script>
-<script src="cycle.js"></script>
-<script src="swipe.js"></script>
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-</body>
+<!doctype html>
+<html lang="en" ng-app="designApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Michael Freiman</title>
+    <meta name="description" content="art design">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+	<body>
+		<div class="view-container">
+	    <div ng-view class="view-frame"></div>
+	  </div>
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-animate/angular-animate.js"></script>
+    <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="vendor/angular-resource/angular-resource.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/filters.js"></script>
+    <script src="scripts/services.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	</body>
 </html>
