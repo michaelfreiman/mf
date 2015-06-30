@@ -1,4 +1,4 @@
 # Ignore'em #
 ###################
-node_modules/
+#node_modules/
 vendor/
